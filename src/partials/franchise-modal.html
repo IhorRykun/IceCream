@@ -1,0 +1,68 @@
+<div data-franchise-modal class="backdrop is-hidden">
+   <div data-franchise-modal-1 class="franchise-modal active-step">
+      <button data-franchise-modal-close1 class="round-button btn" type="button">
+         <svg width="25" height="25">
+           <use class="round-button_icon" href="./images/symbol-defs.svg#close"></use>
+         </svg>
+       </button>
+
+         <p class="franchise-modal__uppertitle">You want to join ours</p>
+         <h2 class="franchise-modal__title">WORLD OF ICE CREAM SHOPS</h2>
+         <p class="franchise-modal__subtitle">Tell us about yourself</p>
+
+         <form class="franchise-modal__form" autocomplete="off">
+            <label class="franchise-modal__form-label" > Name
+               <input class="franchise-modal__form-input" placeholder=" " type="text" name="name" id="client-name" />
+            </label>
+            <label class="franchise-modal__form-label"> Tel
+               <input  class="franchise-modal__form-input" placeholder=" " type="tel" name="name" id="client-phone-number" />
+            </label>
+            <label class="franchise-modal__form-label"> Mail
+               <input  class="franchise-modal__form-input" placeholder=" " type="email" name="name" id="client-e-mail" />
+            </label>
+         </form>
+         <button data-franchise-modal-open-next-step class="button-sub success-modal__button" type="submit">
+            Next Step
+          </button>
+   </div>
+   
+   <div data-franchise-modal-2 class="franchise-modal">
+      <button data-franchise-modal-close2 class="round-button btn" type="button">
+         <svg width="25" height="25">
+           <use class="round-button_icon" href="./images/symbol-defs.svg#close"></use>
+         </svg>
+       </button>
+
+      <button data-franchise-modal-open-prev-step class="prev-button btn" type="button">
+         <svg width="25" height="25">
+           <use class="round-button_icon" href="./images/symbol-defs.svg#icon-arrow-left"></use>
+         </svg>
+       </button>
+
+       <p class="franchise-modal__subtitle">Tell us about your <br> <span class="franchise-modal__title">LOCATION</span></p>
+
+       <form class="franchise-modal__form">
+
+         <label class="franchise-modal__form-label"> Country  
+            <input class="franchise-modal__form-input" placeholder=" " type="text" name="Country" id="Country" />
+         </label>
+         <label class="franchise-modal__form-label"> City
+            <input  class="franchise-modal__form-input" placeholder=" " type="text" name="City" id="City" />
+         </label>
+         <label class="franchise-modal__form-label"> Address
+            <input  class="franchise-modal__form-input" placeholder=" " type="text" name="Address" id="Address" />
+         </label>
+         <label class="franchise-modal__form-label" for="client-comment">What kind of cooperation do you interested
+            <textarea name="feedback" rows="5" class="franchise-feedback" id="client-comment" placeholder="Enter the text"></textarea>
+         </label>
+
+         <label class="agreement">
+            <input class="agreement__checkbox agreement__text" type="checkbox" name="" value="checkbox-box" />
+            I give a permission for the collection my personal data
+         </label>
+      </form>
+              <button data-modal-success-open-franchise class="button-sub success-modal__button" type="submit">
+               join the team
+         </button>
+   </div>
+</div>

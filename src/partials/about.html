@@ -1,0 +1,59 @@
+<section class="about section" id="about">
+  <div class="about__container container">
+    <p class="about__label">tradition and love</p>
+    <h2 class="about__title">how it's made?</h2>
+    <!-- 
+    sizes="(min-width: 1200px) 501px"
+    sizes="(min-width: 768px) 336px"
+    sizes="(min-width: 320px) 280px" -->
+    <div class="about__milk">
+      <picture>
+        <source
+          media="(min-width: 1200px)"
+          srcset="images/about/milk-lg.png 1x, images/about/milk-lg-@2x.png 2x"
+          type="image/png"
+        />
+        <source
+          media="(min-width: 768px)"
+          srcset="images/about/milk-md.png 1x, images/about/milk-md-@2x.png 2x"
+          type="image/png"
+        />
+        <source
+          media="(min-width: 320px)"
+          srcset="images/about/milk-s.png 1x, images/about/milk-s-@2x.png 2x"
+          type="image/png"
+        />
+
+        <img
+          class="about__splash"
+          loading="lazy"
+          src="./images/about/milk.png"
+          alt="cow"
+        />
+      </picture>
+
+      <div class="about__description">
+        <p class="about__text-bold">
+          Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo
+          cursus, faucibus lorem eget, egestas eros. Maecenas eleifend erat at
+          justo fringilla.
+        </p>
+        <p class="about__text">
+          Curabitur lacinia enim at ex blandit, vel pellentesque odio elementum.
+          Mauris rhoncus orci in imperdiet placerat. Vestibulum euismod nisl
+          suscipit ligula volutpat, a feugiat urna maximus. Cras massa nibh,
+          tincidunt.
+        </p>
+        <p class="about__text">Aliquam erat volutpat. Aenean accumsan.</p>
+
+        <button class="about__btn btn" type="button">
+          Read more
+          <!-- <span class="about__button-text">Read more</span> -->
+          <svg class="about_icon" width="10" height="10">
+            <use href="./images/symbol-defs.svg#icon-Vector-2"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</section>

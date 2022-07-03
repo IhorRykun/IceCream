@@ -1,0 +1,215 @@
+.reviews__container {
+    @media screen and (min-width: 768px) {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        padding-left: 63px;
+        padding-right: 61px;
+    }
+}
+
+.customers-reviews {
+   background-color: var(--color-white);
+   @include mq(not-desktop){
+    padding-top: 0;
+    padding-bottom: 0;
+   }
+
+}
+
+.reviews__text {
+    position: relative;
+
+    z-index: 2;
+
+    font-family: DM Sans, sans-serif;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 2.58;
+    color: var(--color-text-accent);
+
+    text-align: center;
+    letter-spacing: 0.04em;
+
+    background-image: repeating-linear-gradient(to top,
+            #e1e1e1,
+            #e1e1e1 1px,
+            #fafafa 1px,
+            #fafafa 31px);
+
+    @media screen and (min-width: 768px) {
+        font-size: 14px;
+        line-height: 2.14;
+
+        background-image: repeating-linear-gradient(to top,
+                #e1e1e1,
+                #e1e1e1 1px,
+                #fafafa 1px,
+                #fafafa 30px);
+    }
+
+    @media screen and (min-width: 1200px) {
+        font-size: 16px;
+        line-height: 1.88;
+
+        background-image: repeating-linear-gradient(to top,
+                #e1e1e1,
+                #e1e1e1 1px,
+                #fafafa 1px,
+                #fafafa 30.5px);
+    }
+}
+
+.reviews__text::before {
+    content: '';
+
+    position: absolute;
+    top: -14px;
+    left: -32px;
+   
+
+    width: 54px;
+    height: 40px;
+
+    background-image: url(../images/customers/“.svg);
+
+    z-index: -1;
+
+    @media screen and (min-width: 768px) {
+        top: -16px;
+        left: -31px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        top: -14px;
+        left: -38px;
+    }
+}
+
+
+
+.reviews__text-thumb {
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 43px;
+    padding-bottom: 26px;
+    padding-right: 50px;
+    padding-left: 50px;
+
+    background-color: #fafafa;
+
+    @media screen and (min-width: 768px) {
+        margin-bottom: 24px;
+        padding-top: 47px;
+        padding-bottom: 34px;
+        padding-right: 36px;
+        padding-left: 60px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 34px;
+        padding-top: 47px;
+        padding-bottom: 39px;
+        padding-right: 54px;
+        padding-left: 59px;
+    }
+}
+
+.reviews__image {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 29px;
+
+    width: 85px;
+    height: 85px;
+
+    @media screen and (min-width: 768px) {
+        margin-bottom: 19px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 15px;
+    }
+}
+
+.reviews__label {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 30px;
+
+    font-family: DM Sans, sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.86;
+    color: #000000;
+
+    text-align: center;
+
+    &::before {
+        position: relative;
+        content: "";
+        display: block;
+        left: 50%;
+        bottom: 15px;
+        background-image: url(../images/customers/dots.svg);
+        width: 32px;
+        height: 4px;
+        transform: translateX(-50%);
+    }
+
+    @media screen and (min-width: 768px) {
+        margin-bottom: 35px;
+
+        font-size: 16px;
+        line-height: 1.88;
+    }
+
+    @media screen and (min-width: 1200px) {
+        font-size: 20px;
+        line-height: 1.85;
+    }
+}
+
+
+.slick-list {
+    overflow: hidden;
+}
+
+.slick-track {
+    display: flex;
+}
+
+.slick-dots {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    & li {
+        margin: 0 9px;
+    }
+
+    & button {
+        font-size: 0;
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        background-color: #d9d9d9;
+        border: none;
+        outline: transparent;
+    }
+}
+
+.slick-active button {
+    background-color: transparent;
+    background-image: url(../images/customers/house.svg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 0;
+}
+

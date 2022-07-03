@@ -1,0 +1,69 @@
+.success-modal {
+  top: 50%;
+  transform: translatey(-50%);
+  position: absolute;
+  border-radius: 22px;
+  background-color: var(--color-text-lable);
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 20px;
+  max-height: 100%;
+
+  @include mq(mobille-only) {
+    min-width: 320px;
+    // max-width: 550px;
+    width: 100vw;
+  }
+
+  @media screen and (min-width: 650px) {
+    width: 50vw;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &__title {
+    font-family: 'Titan One';
+    color: var(--color-text-title);
+    font-size: 24px;
+    line-height: 1.14;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    margin-top: 16px;
+    text-align: center;
+  }
+
+  &__img {
+    width: 50%;
+    align-items: center;
+  }
+
+  &__subtitle {
+    font-family: 'Titan One';
+    color: var(--color-text-paragraph);
+    font-size: 18px;
+    line-height: 1.16;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  &__button {
+    width: auto;
+    height: auto;
+    padding: 15px;
+    display: flex;
+    margin-top: 20px;
+    align-content: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 18px;
+    color: var(--color-white);
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+  }
+}

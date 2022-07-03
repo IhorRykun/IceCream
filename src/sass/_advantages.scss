@@ -1,0 +1,150 @@
+.advantages {
+  background-color: #fff5f6;
+  @include mq(not-desktop) {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}
+
+.advantages__list {
+  @include mq(tablet) {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-around;
+  }
+}
+
+.advantages__item {
+  max-width: 230px;
+  margin-bottom: 32px;
+  @include mq(mobile-only) {
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  @include mq(tablet) {
+    max-width: 180px;
+    margin-bottom: 0;
+  }
+
+  @include mq(desktop) {
+    max-width: 288px;
+  }
+}
+
+.advantages__amount {
+  font-family: 'Titan One';
+  font-size: 36px;
+  line-height: 1.14;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #d41443;
+  display: block;
+  margin-bottom: 18px;
+
+  @include mq(tablet) {
+    font-size: 48px;
+    margin-bottom: 13px;
+  }
+
+  @include mq(desktop) {
+    font-size: 58px;
+    margin-bottom: 16px;
+  }
+}
+.advantages__amount--apples {
+  display: inline-block;
+}
+
+.kg {
+  font-family: 'Titan One';
+  font-size: 36px;
+  line-height: 1.14;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #d41443;
+  padding-left: 0;
+  text-align: left;
+
+  @include mq(tablet) {
+    font-size: 48px;
+  }
+
+  @include mq(desktop) {
+    font-size: 58px;
+  }
+}
+
+.advantages__text {
+  font-family: 'DM Sans';
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.7;
+  color: #000000;
+
+  @include mq(tablet) {
+    font-size: 14px;
+  }
+
+  @include mq(desktop) {
+    font-size: 16px;
+  }
+}
+
+.advantages__text--milk::before {
+  background-image: url('../images/advantages-icons/milk.png');
+  content: ' ';
+  height: 50px;
+  width: 33px;
+
+  display: block;
+  margin-bottom: 16px;
+
+  animation: changeColor 4000ms linear infinite;
+
+  @include mq(tablet) {
+    margin-bottom: 36px;
+  }
+
+  @include mq(desktop) {
+    margin-bottom: 40px;
+  }
+}
+
+.advantages__text--apples::before {
+  background-image: url('../images/advantages-icons/apples.png');
+  content: ' ';
+  height: 50px;
+  width: 50px;
+
+  display: block;
+  margin-bottom: 16px;
+  @include mq(tablet) {
+    margin-bottom: 36px;
+  }
+  @include mq(desktop) {
+    font-size: 40px;
+  }
+
+  animation: changeColor 4000ms linear infinite;
+}
+
+.advantages__text--heart::before {
+  background-image: url('../images/advantages-icons/heart.png');
+  content: ' ';
+  height: 50px;
+  width: 46px;
+
+  display: block;
+  margin-bottom: 16px;
+  @include mq(tablet) {
+    margin-bottom: 36px;
+  }
+
+  @include mq(desktop) {
+    font-size: 40px;
+  }
+
+  animation: changeColor 4000ms linear infinite;
+}

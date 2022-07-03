@@ -1,0 +1,132 @@
+<section class="hero " id="hero">
+  <div class="container hero__box">
+  <div class="hero__container">
+    <h1 class="hero__title">
+      ice cream made with
+      <span class="hero__title--accept"> passion</span>
+    </h1>
+    <ul class="hero__btn">
+      <li class="hero__item">
+        <a href="#products" class="btn--secondary hero__link">Products </a>
+      </li>
+      <li class="hero__item">
+        <a href="#about" class="btn--primary hero__link">How it’s made? </a>
+      </li>
+    </ul>
+    <div class="hero__statistics">
+      <ul class="hero__statistics--list">
+        <li class="hero__statistics--item">
+          <p class="hero__statistics--text">
+             <span data-digits-counter class="hero__statistics--span" id="cafes">16</span>cafes
+          </p>
+      
+        </li>
+        <li class="hero__statistics--item">
+          <p class="hero__statistics--text">
+            <span data-digits-counter class="hero__statistics--span" id="trucks">23</span>food trucks
+          </p>
+        </li>
+      </ul>
+    </div>
+  </div>
+   
+  <div class="decoration">
+    <div class="decoration__elipse"></div>
+
+    <picture>
+      <!-- набір зображень для телефону -->
+      <source
+        media="(max-width: 767px)"
+        srcset="
+        images/hero/slider-pic7_sm.png     1x,
+        images/hero/slider-pic7@2x_sm.png 2x
+        "
+        type="image/png"
+      />
+      <source
+        media="(min-width: 768px)"
+        srcset="
+          images/hero/slider-pic7_md.png     1x,
+          images/hero/slider-pic7@2x_md.png 2x
+        "
+        type="image/png"
+      />
+      <source
+        media="(min-width: 1200px)"
+        srcset="
+          images/hero/slider-pic7_lg.png     1x,
+          images/hero/slider-pic7@2x_lg.png 2x
+        "
+        type="image/png"
+      />
+      <img
+        class="hero__img"
+        src="images/hero/slider-pic7_sm.png"
+        alt="ice-cream-cone"
+        width="171"
+      />
+    </picture>
+    <picture>
+      <source
+        media="(min-width: 768px)"
+        srcset="
+          images/hero/slider-pic4_md.png     1x,
+          images/hero/slider-pic4@2x_md.png 2x
+        "
+        type="image/png"
+      />
+      <source
+        media="(min-width: 1200px)"
+        srcset="
+          images/hero/slider-pic4_lg.png     1x,
+          images/hero/slider-pic4@2x_lg.png 2x
+        "
+        type="image/png"
+      />
+      <img
+        class="decoration__so-tasty"
+        src="images/hero/slider-pic4_md.png"
+        alt="so-tasty"
+        width="190"
+      />
+    </picture>
+   
+  <div class="hero__block">
+    <picture>
+      <source
+        media="(min-width: 768px)"
+        srcset="
+          images/hero/slider-pic5_md.png     1x,
+          images/hero/slider-pic5@2x_md.png 2x
+        "
+        type="image/png"
+      />
+      <source
+        media="(min-width: 1200px)"
+        srcset="
+          images/hero/slider-pic5_lg.png     1x,
+          images/hero/slider-pic5@2x_lg.png 2x
+        "
+        type="image/png"
+      />
+      <img
+        class="decoration__milk"
+        src="images/hero/slider-pic5_md.png"
+        alt="milk"
+        width="124"
+      />
+    </picture>
+    <div class="hero__block--position">
+      <p class="hero__description">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et
+      </p>
+      <a class="description__btn btn" href="#about" aria-label="go to 'about us' section">
+          <svg width="8" height="8" class="description__icon">
+            <use href="/src/images/symbol-defs.svg#icon-arrow-right"></use>
+          </svg>
+      </a>
+    </div>
+  </div>
+  </div>
+</section>
